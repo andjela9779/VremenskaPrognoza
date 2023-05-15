@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh; /* da bude full screen*/
+    display: flex;  /* svaki div je onda jedan do drugog*/
+    justify-content: center;
+    flex-direction: column; /* nije na vrhu po sredini reda nego po sredini prve kolumne*/
+    align-items: center;    /* center column*/
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    font-family: sans-serif;
+    color:white;
+
+
+}
+
+.location, 
+.temperature,
+.city,
+.location-timezone,
+.skycon {
+    height:30vh;
+    width: 50%;
+    display:flex; /* timezone i icon bili jedno ispod drugog, trebalo je da budu jedno do drugog*/
+    justify-content: space-around; /* da malo razmaknem timezone i icon*/
+    align-items: center;
+}
+
+.temperature{
+    flex-direction: column;
+}
+
+.degree-section{
+    display:flex;
+    align-items: center;
+    cursor: pointer; /* da znamo da je clickable - za promjenu C/F*/
+}
+
+.isDay-description{
+    padding-top: 50px;
+}
+
+.degree-section span{
+    margin: 10px;
+    font-size:30px;
+}
+
+.city {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.degree-section h2 {
+    font-size: 40px;
+}
+
+.weather-icon {
+    /*padding-left: 100px;*/
+}
+
+#skycon {
+    height: 200px;
+}
